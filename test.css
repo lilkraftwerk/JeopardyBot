@@ -1,0 +1,27 @@
+.container {
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.test {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px #000000;
+  color: white;
+  font-family: 'font';
+  src: url('font.ttf'); /* IE9 Compat Modes */
+  src: url('font.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
