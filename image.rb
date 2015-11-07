@@ -1,8 +1,8 @@
 require 'imgkit'
 require 'json'
 require 'marky_markov'
-require 'lingua'
 require 'odyssey'
+require_relative 'custom_twitter'
 
 class ImageCreator
   def initialize
@@ -28,7 +28,7 @@ class ImageCreator
   def get_sentence
     length = 100
     until length < 95 && length > 50
-      sentence = @markov.generate_n_sentences(1).upcase
+      sentence = @markov.generate_n_sentences(1)
       length = sentence.length 
     end
     sentence[-1] = "" if sentence[-1] = "."
@@ -39,10 +39,6 @@ class ImageCreator
     puts "making html"
     get_sentence
     set_html
-    report = Lingua::EN::Readability.new(@sentence) 
-    # puts report.report        # a formatted summary of statistics and measures
-    p report.flesch
-    p report.kincaid
     puts @sentence
     @html
   end
@@ -50,15 +46,13 @@ end
 
 
 
-
-  dog = ImageCreator.new
-
-101.times do |i|
-  puts i 
-  kit = IMGKit.new(dog.generate_html, :quality => 50,
-                      :width   => 800,
-                      :height  => 600,
-            )
-  kit.stylesheets << 'test.css'
-  file = kit.to_file("files/file#{i}.jpg")
-end
+file_path = "tmp/file#{rand(1..100)}.jpg"
+dog = ImageCreator.new
+kit = IMGKit.new(dog.generate_html, :quality => 50,
+                    :width   => 800,
+                    :height  => 600,
+          )
+kit.stylesheets << 'test.css'
+file = kit.to_file(file_path)
+test = CustomTwitter.new
+test.update('test', file)
