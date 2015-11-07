@@ -1,23 +1,22 @@
+html {
+  height: 600px;
+  width: 800px;
+  background-color: rgb(1, 16, 138);
+}
+
 .container {
-  height: 500px;
-  width: 500px;
-  background-color: blue;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /*height: 100%;*/
+  /*width: 100%;*/
 }
 
 .test {
-  margin-top: 50px;
+  width: 60%;
+  height: 50%;
+  margin-left: 20%;
+  margin-top: 20%;
   text-align: center;
-  font-size: 2em;
-  text-shadow: 2px 2px 4px #000000;
+  font-size: 2.5em;
+  text-shadow: 4px 4px 1px #000000;
   color: white;
   font-family: 'font';
   src: url('font.ttf'); /* IE9 Compat Modes */
