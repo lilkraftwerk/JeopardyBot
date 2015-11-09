@@ -1,4 +1,7 @@
 require 'twitter'
+require 'active_support'
+require 'active_support/time'
+
 require_relative 'keys.rb'
 
 TWITTER_KEY ||= ENV["TWITTER_KEY"]
@@ -20,6 +23,12 @@ class CustomTwitter
       config.access_token = ACCESS_TOKEN
       config.access_token_secret = ACCESS_SECRET
     end
+  end
+
+  def is_last_tweet_older_than_four_hours
+    last = @client.user_timeline.first.created_at
+    puts "last tweet was #{time_ago_in_words(last)} ago, so should we tweet? #{last <= 4.hours.ago}"
+    last <= 4.hours.ago
   end
 
   def update(text, image)

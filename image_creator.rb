@@ -57,13 +57,11 @@ def make_file
   kit = IMGKit.new(creator.generate_html, quality: 50, width: 800, height: 600)
   kit.stylesheets << 'styles.css'
   file = kit.to_file(file_path)
-  file_path
+  file
 end
 
 def tweet
   file = make_file
   twit = CustomTwitter.new
-  twit.update(get_catchphrase)
+  twit.update(get_catchphrase, file)
 end
-
-10.times {make_file}
