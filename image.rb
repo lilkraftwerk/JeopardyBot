@@ -19,7 +19,7 @@ class ImageCreator
       "<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>]",
       "</head",
       "<body>",
-      "<div class='container'><div class='test'>#{@sentence}</div></div>",
+      "<div class='container'><div class='text textbox'>#{@sentence}</div></div>",
       "</body>",
       "</html>"
     ].join("")
@@ -44,15 +44,13 @@ class ImageCreator
   end
 end
 
-
-
 file_path = "tmp/file#{rand(1..100)}.jpg"
 dog = ImageCreator.new
 kit = IMGKit.new(dog.generate_html, :quality => 50,
                     :width   => 800,
                     :height  => 600,
           )
-kit.stylesheets << 'test.css'
+kit.stylesheets << 'styles.css'
 file = kit.to_file(file_path)
 test = CustomTwitter.new
-test.update('test', file)
+# test.update('test', file)

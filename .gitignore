@@ -4,3 +4,4 @@ Gemfile.lock
 keys.rb
 tmp/*.jpeg
 tmp/*.jpg
+/games

@@ -9,11 +9,7 @@ html {
   /*width: 100%;*/
 }
 
-.test {
-  width: 60%;
-  /*height: 50%;*/
-  margin-left: 20%;
-  margin-top: 24%;
+.text {
   text-align: center;
   font-size: 2.9em;
   text-shadow: 4px 4px 1px #000000;
@@ -23,4 +19,17 @@ html {
   src: url('font.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.textbox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;      
 }
