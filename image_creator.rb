@@ -44,13 +44,26 @@ class ImageCreator
   end
 end
 
-file_path = "tmp/file#{rand(1..100)}.jpg"
-dog = ImageCreator.new
-kit = IMGKit.new(dog.generate_html, :quality => 50,
-                    :width   => 800,
-                    :height  => 600,
-          )
-kit.stylesheets << 'styles.css'
-file = kit.to_file(file_path)
-test = CustomTwitter.new
-# test.update('test', file)
+def get_catchphrase
+  ## obviously unnecessary but heck, now it scales
+  [
+    "Please answer in the form of a question"
+  ].shuffle.shift
+end
+
+def make_file
+  file_path = "tmp/file#{rand(1..100)}.jpg"
+  creator = ImageCreator.new
+  kit = IMGKit.new(creator.generate_html, quality: 50, width: 800, height: 600)
+  kit.stylesheets << 'styles.css'
+  file = kit.to_file(file_path)
+  file_path
+end
+
+def tweet
+  file = make_file
+  twit = CustomTwitter.new
+  twit.update(get_catchphrase)
+end
+
+10.times {make_file}
