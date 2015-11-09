@@ -1,9 +1,6 @@
 require 'imgkit'
 require 'json'
 require 'marky_markov'
-require 'odyssey'
-require 'action_view'
-include ActionView::Helpers::DateHelper
 
 require_relative 'custom_twitter'
 require_relative 'image_creator'
@@ -41,4 +38,3 @@ def last_tweet_older_than_four_hours?
   client.is_last_tweet_older_than_four_hours
 end
 
-tweet
