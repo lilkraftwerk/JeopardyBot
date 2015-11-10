@@ -1,7 +1,9 @@
 require 'imgkit'
 require 'json'
 require 'marky_markov'
+require 'pry'
 
+require_relative 'config'
 require_relative 'custom_twitter'
 require_relative 'image_creator'
 
@@ -15,8 +17,10 @@ end
 def make_file
   creator = ImageCreator.new
   kit = IMGKit.new(creator.generate_html, quality: 50, width: 800, height: 600)
+  binding.pry
   kit.stylesheets << 'styles.css'
-  kit.to_file("tmp/file#{rand(1..100)}.jpg")
+  file = kit.to_file("tmp/file#{rand(1..100)}.jpg")
+  file
 end
 
 def tweet
@@ -38,3 +42,4 @@ def last_tweet_older_than_four_hours?
   client.is_last_tweet_older_than_four_hours
 end
 
+tweet

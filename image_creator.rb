@@ -1,8 +1,11 @@
 require 'imgkit'
 require 'json'
 require 'marky_markov'
+require 'pathname'
 
 require_relative 'custom_twitter'
+
+font_dir = File.join(Dir.home, ".fonts")
 
 class ImageCreator
   def initialize
@@ -42,26 +45,4 @@ class ImageCreator
     puts @sentence
     @html
   end
-end
-
-def get_catchphrase
-  ## obviously unnecessary but heck, now it scales
-  [
-    "Please answer in the form of a question"
-  ].shuffle.shift
-end
-
-def make_file
-  file_path = "tmp/file#{rand(1..100)}.jpg"
-  creator = ImageCreator.new
-  kit = IMGKit.new(creator.generate_html, quality: 50, width: 800, height: 600)
-  kit.stylesheets << 'styles.css'
-  file = kit.to_file(file_path)
-  file
-end
-
-def tweet
-  file = make_file
-  twit = CustomTwitter.new
-  twit.update(get_catchphrase, file)
 end
