@@ -28,8 +28,8 @@ class ImageCreator
   end
 
   def get_sentence
-    markov = JeopardyMarkov.new
-    @sentence = markov.get_sentence
+    cluebot = ClueBot.new
+    @sentence = Cluebot.result[:clue]
   end
 
   def generate_html

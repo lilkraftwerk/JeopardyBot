@@ -1,44 +1,23 @@
 require 'json'
 require 'marky_markov'
 
-class JeopardyMarkov
+class ClueBot
+  attr_reader :result
+
   def initialize
-    @clues = []
-    join_clues
-    create_dictionary
+    @result = {}
+    game_number = rand(60) + 1
+    @game = JSON.parse(File.open("games/#{game_number}.json").read)
+    format_result
   end
 
-  def join_clues
-    files = Dir["clues/*.json"]
-    files.each { |dir| @clues << JSON.parse(File.open(dir).read) }
-    @clues = @clues.flatten
-  end
-
-  def create_dictionary
-    @markov = MarkyMarkov::Dictionary.new('dict', 2)
-    @clues.each do |clue|
-      @markov.parse_string(clue)
-    end
-  end
-
-  def make_sentence
-    length = 200
-    # puts "making sentence..."
-    until length < 120 && length > 50
-      @sentence = @markov.generate_n_words(rand(20))
-      length = @sentence.length 
-    end
-    # puts "done making sentence"
-    format_sentence 
-  end
-
-  def format_sentence
-
-    @sentence = @sentence.upcase
-  end
-
-  def get_sentence
-    make_sentence
-    @sentence
+  def format_result
+    #change this to full number of games
+    category_number = rand(12)
+    category = @game[category_number.to_s]
+    @result[:category] = category["title"]
+    clue = category["clues"].shuffle.shift
+    @result[:value] = clue[0]
+    @result[:clue] = clue[1]
   end
 end

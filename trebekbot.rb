@@ -7,20 +7,27 @@ require_relative 'custom_twitter'
 require_relative 'image_creator'
 require_relative 'cluebot'
 
-def get_catchphrase
-  [
-    "Please answer in the form of a question"
-  ].shuffle.shift
-end
 
-def make_file
-  puts "making file"
-  creator = ImageCreator.new
-  kit = IMGKit.new(creator.generate_html, quality: 50, width: 800, height: 600)
-  kit.stylesheets << "css/styles.css"
-  p kit
-  file = kit.to_file("tmp/file#{rand(1..100)}.jpg")
-  file
+class TrebekBot
+  def initialize
+    @cluebot = ClueBot.new
+  end
+  
+  def get_catchphrase
+    [
+      "Please answer in the form of a question"
+    ].shuffle.shift
+  end
+
+  def make_file
+    puts "making file"
+    creator = ImageCreator.new
+    kit = IMGKit.new(creator.generate_html(cluebot), quality: 50, width: 800, height: 600)
+    kit.stylesheets << "css/styles.css"
+    p kit
+    file = kit.to_file("tmp/file#{rand(1..100)}.jpg")
+    file
+  end
 end
 
 def tweet
