@@ -1,7 +1,6 @@
 require 'imgkit'
 require 'json'
 require 'marky_markov'
-require 'pry'
 
 require_relative 'config'
 require_relative 'custom_twitter'
