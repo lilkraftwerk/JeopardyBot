@@ -39,3 +39,4 @@ class CustomTwitter
     @client.search(text, result_type: "recent")
   end
 end
+
