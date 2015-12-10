@@ -1,7 +1,5 @@
 /ignore
 /files
-Gemfile
-Gemfile.lock
 keys.rb
 tmp/*.jpeg
 tmp/*.jpg
