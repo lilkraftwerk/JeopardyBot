@@ -23,9 +23,11 @@ class JeopardyMarkov
   def get_sentence
     length = 100
     until length < 95 && length > 50
+      puts "making another sentence..."
       sentence = @markov.generate_n_sentences(1)
       length = sentence.length 
     end
+    puts "done making sentence"
     sentence[-1] = "" if sentence[-1] = "."
     sentence.upcase
   end
