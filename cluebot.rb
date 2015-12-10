@@ -21,7 +21,6 @@ class JeopardyMarkov
   end
 
   def get_sentence
-    puts "getting sentence"
     length = 100
     until length < 95 && length > 50
       sentence = @markov.generate_n_sentences(1)

@@ -9,7 +9,6 @@ font_dir = File.join(Dir.home, ".fonts")
 
 class ImageCreator
   def initialize
-    @markov = MarkyMarkov::Dictionary.new('dictionary') # Saves/opens dictionary.mmd
     get_sentence
     set_html
   end

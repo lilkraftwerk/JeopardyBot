@@ -14,6 +14,7 @@ def get_catchphrase
 end
 
 def make_file
+  puts "making file"
   creator = ImageCreator.new
   kit = IMGKit.new(creator.generate_html, quality: 50, width: 800, height: 600)
   kit.stylesheets << 'styles.css'
@@ -22,6 +23,7 @@ def make_file
 end
 
 def tweet
+  put "tweeting"
   file = make_file
   twit = CustomTwitter.new
   twit.update(get_catchphrase, file)
