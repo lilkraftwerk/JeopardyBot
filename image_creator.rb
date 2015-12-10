@@ -8,7 +8,8 @@ require_relative 'custom_twitter'
 font_dir = File.join(Dir.home, ".fonts")
 
 class ImageCreator
-  def initialize
+  def initialize(cluebot)
+    @cluebot = cluebot
     get_sentence
     set_html
   end
@@ -28,8 +29,7 @@ class ImageCreator
   end
 
   def get_sentence
-    cluebot = ClueBot.new
-    @sentence = Cluebot.result[:clue]
+    @sentence = @cluebot.result[:clue]
   end
 
   def generate_html

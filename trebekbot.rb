@@ -11,18 +11,17 @@ require_relative 'cluebot'
 class TrebekBot
   def initialize
     @cluebot = ClueBot.new
+    @result = @cluebot.result
   end
-  
-  def get_catchphrase
-    [
-      "Please answer in the form of a question"
-    ].shuffle.shift
+
+  def format_tweet_text
+    @tweet_text = "I'll take #{@result[:category]} for #{@result[:value]}, Alex"
   end
 
   def make_file
     puts "making file"
-    creator = ImageCreator.new
-    kit = IMGKit.new(creator.generate_html(cluebot), quality: 50, width: 800, height: 600)
+    creator = ImageCreator.new(@cluebot)
+    kit = IMGKit.new(creator.generate_html, quality: 50, width: 800, height: 600)
     kit.stylesheets << "css/styles.css"
     p kit
     file = kit.to_file("tmp/file#{rand(1..100)}.jpg")
@@ -32,9 +31,10 @@ end
 
 def tweet
   puts "tweeting"
-  file = make_file
+  bot = TrebekBot.new
+  file = bot.make_file
   twit = CustomTwitter.new
-  twit.update(get_catchphrase, file)
+  twit.update(bot.format_tweet_text, file)
 end
 
 def should_tweet?
