@@ -14,14 +14,14 @@ html {
 
 .text {
   text-align: center;
-  font-size: 4.2em;
+  font-size: 3.5em;
   text-shadow: 4px 4px 1px #000000;
   color: white;
   font-family: Jeopardy;
 }
 
 .textbox {
-  width: 800px;
+  width: 600px;
   position: absolute;
   left: 50%;
   top: 50%;

@@ -22,7 +22,7 @@ class ImageCreator
       "<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>]",
       "</head",
       "<body>",
-      "<div class='container'><div class='text textbox'>#{@sentence}</div></div>",
+      "<div class='container'><div class='text textbox'>#{@sentence.upcase}</div></div>",
       "</body>",
       "</html>"
     ].join("")
