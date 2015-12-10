@@ -39,5 +39,3 @@ def last_tweet_older_than_four_hours?
   client = CustomTwitter.new
   client.is_last_tweet_older_than_four_hours
 end
-
-tweet
