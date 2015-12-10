@@ -29,13 +29,11 @@ class ImageCreator
   end
 
   def get_sentence
-    length = 100
-    until length < 95 && length > 50
-      sentence = @markov.generate_n_sentences(1)
-      length = sentence.length 
-    end
-    sentence[-1] = "" if sentence[-1] = "."
-    @sentence = sentence.upcase
+    # markov = JeopardyMarkov.new
+    # @sentence = markov.get_sentence
+
+    # placeholder 
+    @sentence = "YOU CAN SAY NO TO THIS, BUT ACADEMY-AWARD WINNING RAPPER JUICY J CAN'T"
   end
 
   def generate_html
