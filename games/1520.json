@@ -1,0 +1,302 @@
+{
+  "0": {
+    "title": "BALLET'S IN THE HOUSE",
+    "clues": [
+      [
+        "$100",
+        "The Bolshoi Ballet at the Bolshoi Theatre"
+      ],
+      [
+        "$200",
+        "American Ballet Theatre at the Metropolitan Opera House"
+      ],
+      [
+        "$300",
+        "The Royal Ballet at Covent Garden"
+      ],
+      [
+        "$400",
+        "The Joffrey Ballet at the Auditorium Theatre"
+      ],
+      [
+        "$500",
+        "The Kirov Ballet at the Mariinsky Theatre"
+      ]
+    ]
+  },
+  "1": {
+    "title": "HOLLYWOOD'S BIGGEST GROSSERS",
+    "clues": [
+      [
+        "$100",
+        "1985:\"Back to the Future\",\"The Color Purple\",\"Out of Africa\""
+      ],
+      [
+        "$200",
+        "1976:\"A Star Is Born\",\"All The President's Men\",\"Rocky\""
+      ],
+      [
+        "$300",
+        "1996:\"Twister\",\"Mission: Impossible\",\"Independence Day\""
+      ],
+      [
+        "$400",
+        "1991:\"Terminator 2\",\"City Slickers\",\"Beauty and the Beast\""
+      ],
+      [
+        "$500",
+        "1990:\"Home Alone\",\"Dances With Wolves\",\"Pretty Woman\""
+      ]
+    ]
+  },
+  "2": {
+    "title": "PLOTS",
+    "clues": [
+      [
+        "$100",
+        "This country has accused the Falun Gong sect of plotting to overthrow the country; they deny it, of course"
+      ],
+      [
+        "$200",
+        "This former D.C. mayor wants an inquiry into his claim that the FBI plotted to trap him on bribery charges"
+      ],
+      [
+        "$300",
+        "This country's Park Ju-sun lost his job in connection with the believed government cover-up of \"Furgate\""
+      ],
+      [
+        "$400",
+        "In 1999 Yugoslavia accused France of plotting to kill this president; France called the accusations a fantasy"
+      ],
+      [
+        "$500",
+        "In arresting members of the Mahdaviyat group, this country claimed it had thwarted a plot to kill Khatami"
+      ]
+    ]
+  },
+  "3": {
+    "title": "PENNY FOR YOUR THOUGHTS",
+    "clues": [
+      [
+        "$100",
+        "In 1927 Harry of the Warner Bros. said, \"Who the hell wants to hear actors\" do this"
+      ],
+      [
+        "$200",
+        "In 1954 Grand Ole Opry manager Jim Denny told this singer, \"You ought to go back to drivin' a truck\""
+      ],
+      [
+        "$300",
+        "In 1977 he told David Frost, \"When the president does it, that means it is not illegal\""
+      ],
+      [
+        "$400",
+        "James Ussher thought this was created in the evening of October 22, 4004 B.C."
+      ],
+      [
+        "$500",
+        "Speaking in exile in 1959, he reportedly said, \"I give Castro a year.  No more\""
+      ]
+    ]
+  },
+  "4": {
+    "title": "BOXERS",
+    "clues": [
+      [
+        "$100",
+        "In 1993 this semi-retired boxer starred as a retired boxer on the short-lived sitcom \"George\""
+      ],
+      [
+        "$200",
+        "In 1999 this 3-time world heavyweight champ became the first professional boxer to grace the cover of a Wheaties box"
+      ],
+      [
+        "$300",
+        "In Jan. 1999 he KO'd Francois Botha; in Feb. 1999 he went to jail in Maryland for assault"
+      ],
+      [
+        "$400",
+        "He required 15 stitches to his right ear & reconstructive surgery after a 1997 title bout"
+      ],
+      [
+        "DAILY DOUBLE",
+        "Winning gold in the 1992 Olympics, this lightweight boxer circled the ring holding an American flag & a Mexican flag"
+      ]
+    ]
+  },
+  "5": {
+    "title": "BRIEFS",
+    "clues": [
+      [
+        "$100",
+        "A JP, this public officer, can administer oaths & perform weddings"
+      ],
+      [
+        "$200",
+        "Fans of the second amendment may belong to this group, the NRA"
+      ],
+      [
+        "$300",
+        "Another term for \"Mormon\", it's abbreviated LDS"
+      ],
+      [
+        "$400",
+        "XYZ is a short way of telling someone to do this"
+      ],
+      [
+        "$500",
+        "Car buyers know it's what MSRP stands for"
+      ]
+    ]
+  },
+  "6": {
+    "title": "GEOGRAPHIC SAINTS",
+    "clues": [
+      [
+        "$200",
+        "The 2 wavy bars on this city's flag represent the Missouri & Mississippi Rivers"
+      ],
+      [
+        "$400",
+        "This Newfoundland capital is the closest North American port to Europe"
+      ],
+      [
+        "$600",
+        "Spanish-speaking people call this largest of the U.S. Virgin Islands Santa Cruz"
+      ],
+      [
+        "$800",
+        "In 1659 the English East India Company founded the first permanent settlement on this island in the south Atlantic"
+      ],
+      [
+        "$1000",
+        "This French city is named for the first bishop of Paris, whose body is supposedly buried near these"
+      ]
+    ]
+  },
+  "7": {
+    "title": "LOUSY SOUVENIRS",
+    "clues": [
+      [
+        "$200",
+        "My aunt went to Spain & all I got were these lousy pants worn by heroes of the bullring"
+      ],
+      [
+        "$400",
+        "My mother went to Hawaii & all I got was this long, loose dress"
+      ],
+      [
+        "$600",
+        "My uncle went to England & all I got was this lousy piece of a suit, which Americans call a vest"
+      ],
+      [
+        "$800",
+        "My brother went to Venice Beach & all I got was this lousy shirt named for what he showed off"
+      ],
+      [
+        "$1000",
+        "My granddad went to Ireland & all I got was this lousy overcoat named for a province there"
+      ]
+    ]
+  },
+  "8": {
+    "title": "CALL ME SMITTY",
+    "clues": [
+      [
+        "$200",
+        "Her Armistice Day rendition of \"God Bless America\" in 1938 introduced the song to the world"
+      ],
+      [
+        "$400",
+        "The 1969 Oscar winner for \"The Prime of Miss Jean Brodie\" was this future dame"
+      ],
+      [
+        "$600",
+        "Governor of New York 4 times, he ran unsuccessfully for president in 1928"
+      ],
+      [
+        "$800",
+        "In the Basketball Coaches Hall of Fame, this former University of North Carolina coach is the only Smith"
+      ],
+      [
+        "$1000",
+        "The founder of the Rhodesian Front, he was prime minister of Rhodesia from 1964 to 1979"
+      ]
+    ]
+  },
+  "9": {
+    "title": "PENGUINS",
+    "clues": [
+      [
+        "$200",
+        "While penguins can't do this, they evolved from birds that could"
+      ],
+      [
+        "$400",
+        "While swimming, penguins have to keep an eye out for the leopard one of these, one of their chief predators"
+      ],
+      [
+        "$600",
+        "From the name of a black European crow known for its gregarious habits, it's the term for a penguin colony"
+      ],
+      [
+        "DAILY DOUBLE",
+        "This \"regal\" penguin is second in size to the emperor penguin"
+      ],
+      [
+        "$1000",
+        "The name of the penguin seen here; looking like he stuck a feather in his cap"
+      ]
+    ]
+  },
+  "10": {
+    "title": "ASSOCIATIONS",
+    "clues": [
+      [
+        "$200",
+        "The main concern of the International Society of Arboriculture is these objects"
+      ],
+      [
+        "$400",
+        "Animals that are the \"E\" in the organization BPOE"
+      ],
+      [
+        "DAILY DOUBLE",
+        "This inventor's association for the deaf is on Volta Place in Washington, D.C."
+      ],
+      [
+        "$800",
+        "A member of the AAFS, the American Academy of these sciences, may visit a crime scene"
+      ],
+      [
+        "$1000",
+        "Founded in 1874 & still fighting for prohibition, the \"Woman's\" this is based in Illinois"
+      ]
+    ]
+  },
+  "11": {
+    "title": "\"DEC\" ME",
+    "clues": [
+      [
+        "$200",
+        "It's the enticement seen here"
+      ],
+      [
+        "$400",
+        "To chop off the head of something"
+      ],
+      [
+        "$600",
+        "From the Latin for \"to make clear\", it's a formal statement or official proclamation"
+      ],
+      [
+        "$800",
+        "Old, overused & in poor condition"
+      ],
+      [
+        "$1000",
+        "This French adjective describes something reduced in status in society"
+      ]
+    ]
+  }
+}

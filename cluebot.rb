@@ -30,5 +30,8 @@ class ClueBot
     clue = category["clues"].shuffle.shift
     @result[:value] = clue[0]
     @result[:clue] = clue[1]
+    puts "length of clue is "
+    puts @result[:clue].length
+    get_game if @result[:clue].length > 130
   end
 end
