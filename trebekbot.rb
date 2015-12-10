@@ -15,7 +15,20 @@ class TrebekBot
   end
 
   def format_tweet_text
-    @tweet_text = "I'll take #{@result[:category]} for #{@result[:value]}, Alex"
+    if @result[:value] == "DAILY DOUBLE"
+      @tweet_text = [
+
+        ]
+    else
+    @tweet_text = [
+      "I'll take #{@result[:category]} for #{@result[:value]}, Alex",
+      "#{@result[:category]} for #{@result[:value]}, Alex",
+      "Let's do #{@result[:category]} for #{@result[:value]}, Alex",
+      "Thanks, Alex. Let's go with #{@result[:category]} for #{@result[:value]}",
+
+      "How about #{@result[:category]} for #{@result[:value]}, Alex?",
+      ].shuffle.shift
+    end
   end
 
   def make_file
@@ -23,7 +36,6 @@ class TrebekBot
     creator = ImageCreator.new(@cluebot)
     kit = IMGKit.new(creator.generate_html, quality: 50, width: 800, height: 600)
     kit.stylesheets << "css/styles.css"
-    p kit
     file = kit.to_file("tmp/file#{rand(1..100)}.jpg")
     file
   end

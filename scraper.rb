@@ -8,9 +8,14 @@ class JeopardyScraper
     @game = {}
     @doc = Nokogiri::HTML(open("http://www.j-archive.com/showgame.php?game_id=#{game_number}"))
     get_categories
-    get_clues_and_values
-    assign_clues_to_category
-    write_game
+    if @game == {}
+      write_empty_game
+      return
+    else
+      get_clues_and_values
+      assign_clues_to_category
+      write_game
+    end
   end
 
   # game = {
@@ -48,6 +53,14 @@ class JeopardyScraper
     end
     @round_two_clues.each_with_index do |clue, index|
       @game[(index % 6) + 6][:clues] << clue
+    end
+  end
+
+  def write_empty_game
+    empty = {empty: true}
+    puts "writing empty game"
+    File.open("games/#{@number}.json","w") do |f|
+      f.write(JSON.pretty_generate(empty))
     end
   end
 

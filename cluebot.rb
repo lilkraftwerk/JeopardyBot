@@ -6,9 +6,20 @@ class ClueBot
 
   def initialize
     @result = {}
-    game_number = rand(60) + 1
-    @game = JSON.parse(File.open("games/#{game_number}.json").read)
+    get_game
     format_result
+  end
+
+  def get_game
+    total_games = Dir['games/*.json'].length
+    puts "#{total_games} total games"
+    game_number =  rand(total_games) + 1
+    parsed = JSON.parse(File.open("games/#{game_number}.json").read)
+    if parsed[:empty]
+      get_game
+    else
+      @game = parsed
+    end
   end
 
   def format_result
