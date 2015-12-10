@@ -15,21 +15,30 @@ class JeopardyMarkov
   end
 
   def create_dictionary
-    @clues = @clues.join(' ')
-    @markov = MarkyMarkov::Dictionary.new('dict', 4)
-    @markov.parse_string @clues
+    @markov = MarkyMarkov::Dictionary.new('dict', 2)
+    @clues.each do |clue|
+      @markov.parse_string(clue)
+    end
+  end
+
+  def make_sentence
+    length = 200
+    # puts "making sentence..."
+    until length < 120 && length > 50
+      @sentence = @markov.generate_n_words(rand(20))
+      length = @sentence.length 
+    end
+    # puts "done making sentence"
+    format_sentence 
+  end
+
+  def format_sentence
+
+    @sentence = @sentence.upcase
   end
 
   def get_sentence
-    length = 200
-    puts "making sentence..."
-    until length < 120 && length > 50
-      sentence = @markov.generate_n_sentences(1)
-      length = sentence.length 
-    end
-    puts "done making sentence"
-    puts sentence
-    sentence[-1] = "" if sentence[-1] = "."
-    sentence.upcase
+    make_sentence
+    @sentence
   end
 end
