@@ -17,7 +17,7 @@ class TrebekBot
   def format_tweet_text
     if @result[:value] == "DAILY DOUBLE"
       @tweet_text = [
-          "A Daily Double! The category is #{@result[:category]}"
+          "A Daily Double! The category is #{@result[:category]}. Good luck!"
         ]
     else
     @tweet_text = [
@@ -26,7 +26,13 @@ class TrebekBot
       "Let's do #{@result[:category]} for #{@result[:value]}, Alex",
       "Thanks, Alex. Let's go with #{@result[:category]} for #{@result[:value]}",
       "How about #{@result[:category]} for #{@result[:value]}, Alex?",
-      "Hmm... Let's go with #{@result[:category]} for #{@result[:value]}"
+      "Hmm... Let's go with #{@result[:category]} for #{@result[:value]}",
+      "I'll pick #{@result[:category]} for #{@result[:value]}",
+      "For #{@result[:value]}, let's go with #{@result[:category]}, Alex",
+      "#{@result[:value]}, #{@result[:category]}, thanks Alex",
+      "#{@result[:category]} for #{@result[:value]}",
+      "I'd like #{@result[:category]} for #{@result[:value]}, Alex",
+      "How's #{@result[:category]} for #{@result[:value]}, Alex?",
       ].shuffle.shift
     end
   end
