@@ -4,16 +4,28 @@ require 'open-uri'
 
 class JeopardyScraper
   def initialize(game_number)
+    @game = {}
     @doc = Nokogiri::HTML(open("http://www.j-archive.com/showgame.php?game_id=#{game_number}"))
     get_categories
     get_clues_and_values
-    puts "clues length is #{@clues.length}, cats length is #{@categories.length}"
+    assign_clues_to_category
+    p @game
   end
 
+  # game = {
+    # 1: {
+      # category: 'blah blah blah',
+      # clues: [1, 2, 3]
+    # }
+  # }
+
   def get_categories
-    @categories = []
-    @doc.css('td').css('.category_name').each {|cat| @categories << cat.text }
-    @categories = @categories[0..-2]
+    @doc.css('td').css('.category_name').each_with_index do |category, index| 
+      next if index == 12
+      @game[index] = {}
+      @game[index][:category] = category.text 
+      @game[index][:clues] = []
+    end
   end
 
   def get_clues_and_values
@@ -25,6 +37,17 @@ class JeopardyScraper
       @clues << [value, clue_text]
     end
     @clues = @clues[0..-2]
+    @round_one_clues = @clues[0..29]
+    @round_two_clues = @clues[30..59]
+  end
+
+  def assign_clues_to_category
+    @round_one_clues.each_with_index do |clue, index|
+      @game[index % 6][:clues] << clue
+    end
+    @round_two_clues.each_with_index do |clue, index|
+      @game[(index % 6) + 6][:clues] << clue
+    end
   end
 end
 
@@ -68,3 +91,4 @@ jep = JeopardyScraper.new(game)
 #   end
 # end
 
+# 
