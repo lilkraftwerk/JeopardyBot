@@ -6,6 +6,7 @@ require 'pry'
 require_relative 'config'
 require_relative 'custom_twitter'
 require_relative 'image_creator'
+require_relative 'cluebot'
 
 def get_catchphrase
   [

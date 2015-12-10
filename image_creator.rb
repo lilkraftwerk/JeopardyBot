@@ -1,7 +1,7 @@
 require 'imgkit'
 require 'json'
-require 'marky_markov'
 require 'pathname'
+require 'cluebot'
 
 require_relative 'custom_twitter'
 
