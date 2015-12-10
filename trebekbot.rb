@@ -26,6 +26,7 @@ class TrebekBot
       "Let's do #{@result[:category]} for #{@result[:value]}, Alex",
       "Thanks, Alex. Let's go with #{@result[:category]} for #{@result[:value]}",
       "How about #{@result[:category]} for #{@result[:value]}, Alex?",
+      "Hmm... Let's go with #{@result[:category]} for #{@result[:value]}"
       ].shuffle.shift
     end
   end

@@ -32,6 +32,6 @@ class ClueBot
     @result[:clue] = clue[1]
     puts "length of clue is "
     puts @result[:clue].length
-    get_game if @result[:clue].length > 130
+    get_game if @result[:clue].length > 130 || result[:clue].length < 20 
   end
 end

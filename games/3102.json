@@ -1,0 +1,302 @@
+{
+  "0": {
+    "title": "YOU'RE IN THIS FOREIGN COUNTRY IF...",
+    "clues": [
+      [
+        "$200",
+        "you're jogging in Johannesburg"
+      ],
+      [
+        "$400",
+        "you're lounging in Lima, the capital"
+      ],
+      [
+        "$600",
+        "you're modeling in Milan, population 1.3 million"
+      ],
+      [
+        "$800",
+        "you're hopping in Helsinki"
+      ],
+      [
+        "$1000",
+        "you're resting in Riyadh"
+      ]
+    ]
+  },
+  "1": {
+    "title": "THE SECRET LIVES OF TEACHERS",
+    "clues": [
+      [
+        "$200",
+        "Ms. Dibbs knows a lot about Iran--I bet she works for this spy agency based in Langley, Virginia"
+      ],
+      [
+        "$400",
+        "You buy the P.E. teacher's soccer injury story?  He hurt his knee jumping police cars on a Harley-Davidson this, duh"
+      ],
+      [
+        "$600",
+        "Everyone knows Mr. Lee made $100 million working for this Bill Gates co. & now teaches for $1 a year"
+      ],
+      [
+        "$800",
+        "Mr. Conklin was a captain when the U.S. Navy was attacked at this site in Hawaii in 1941--he's that old!"
+      ],
+      [
+        "$1000",
+        "Ms. Lenox' only friend is a vicious dog called a Doberman this, & the last kid who trick or treated her is still missing"
+      ]
+    ]
+  },
+  "2": {
+    "title": "TRANSFORMED FOOD",
+    "clues": [
+      [
+        "$200",
+        "Dry a grape & it becomes this"
+      ],
+      [
+        "$400",
+        "A prune is this fruit before it becomes shriveled"
+      ],
+      [
+        "$600",
+        "A cucumber that's put in a solution called brine becomes this"
+      ],
+      [
+        "$800",
+        "Warm some milk & add specialized bacteria, separate out the curd clumps, then shape & age the curd to make this"
+      ],
+      [
+        "$1000",
+        "Take a legume whose pod develops underground, roast it, then grind it into a paste to make this"
+      ]
+    ]
+  },
+  "3": {
+    "title": "STORY TIME",
+    "clues": [
+      [
+        "$200",
+        "Name of the Mother Goose thief represented here--what a son of a piper"
+      ],
+      [
+        "$400",
+        "\"'I say!' murmured\" this Seuss animal, \"'I've never heard tell of a small speck of dust that is able to yell\"'"
+      ],
+      [
+        "$600",
+        "This E.B. White guy \"is no ordinary mouse... he lives in New York City with his parents (&) his older brother George\""
+      ],
+      [
+        "$800",
+        "\"One False Note\" & \"The Maze of Bones\" are part of a book series with this number of \"Clues\" in its title"
+      ],
+      [
+        "$1000",
+        "In 1990 she penned \"Fudge-a-Mania\"; are you there, contestants?  It's me, this children's book author"
+      ]
+    ]
+  },
+  "4": {
+    "title": "PET PROJECTS",
+    "clues": [
+      [
+        "$200",
+        "When we first meet this title character in a 2008 Pixar film, his only friend is his pet, cockroach, Hal"
+      ],
+      [
+        "$400",
+        "Monsieur Le Pelt joins Cruella de Vil in the chase for 102 of these in a 2000 sequel"
+      ],
+      [
+        "$600",
+        "Yes, that's Hayden Panettiere befriending one of these animals (who thinks he's a racehorse) in \"Racing Stripes\""
+      ],
+      [
+        "$800",
+        "When Andi & Bruce need to find a place for their pup to live, they create this title lodging in a 2008 film"
+      ],
+      [
+        "$1000",
+        "In a 2007 film this mutt was able to leap tall buildings in a single bound after a mishap in the lab of Simon Barsinister"
+      ]
+    ]
+  },
+  "5": {
+    "title": "4-LETTER WORDS",
+    "clues": [
+      [
+        "$200",
+        "Once you turn 18 it's your \"duty\" as a U.S. citizen to serve on one of these groups in court when called"
+      ],
+      [
+        "$400",
+        "When this cools quickly after an eruption, it can form a type of glass called obsidian"
+      ],
+      [
+        "$600",
+        "It's a song, frequently sung in church, in praise of God"
+      ],
+      [
+        "$800",
+        "The 21st letter of the Hebrew alphabet, it's also the lower front part of your leg"
+      ],
+      [
+        "DAILY DOUBLE",
+        "This soft underlayer of feathers from a duck or goose is used to stuff pillows"
+      ]
+    ]
+  },
+  "6": {
+    "title": "FUN WITH DINOSAURS",
+    "clues": [
+      [
+        "$400",
+        "In 1902 in Montana, paleontologist Barnum Brown unearthed the first specimen of this dinosaur \"king\""
+      ],
+      [
+        "$800",
+        "Hadrosaurus & Corythosaurus are among dinosaurs that had ths type of bill, like a platypus"
+      ],
+      [
+        "DAILY DOUBLE",
+        "The oviraptor's name means that it stole these from other dinosaurs but new evidence sugests that it was misnamed"
+      ],
+      [
+        "$1600",
+        "This 3-horned plant-eater's 10-foot-long head is said to be the largest ever possessed by a land animal"
+      ],
+      [
+        "$2000",
+        "This dinosaur known for the bony plates along its back had multiple spikes at the end of its tail for protection"
+      ]
+    ]
+  },
+  "7": {
+    "title": "NAME THAT SPORT",
+    "clues": [
+      [
+        "$400",
+        "Backstroke,breaststroke,butterfly"
+      ],
+      [
+        "$800",
+        "Camel,double axel,figure 8"
+      ],
+      [
+        "$1200",
+        "Advantage,deuce,love"
+      ],
+      [
+        "$1600",
+        "Icing,power play,blue line"
+      ],
+      [
+        "$2000",
+        "Gaylord,pommel horse,uneven bars"
+      ]
+    ]
+  },
+  "8": {
+    "title": "LET'S GO TO A THEME PARK",
+    "clues": [
+      [
+        "$400",
+        "Let's \"rush\" over to Knott's Berry Farm & let an old prospector teach us how to pan for this"
+      ],
+      [
+        "$800",
+        "You can dine with Shamu at the watery parks named this"
+      ],
+      [
+        "$1200",
+        "The Ghost Train at N.C.'s Tweetsie Railroad starts choo-chooing in this scary month, but you can order tickets now"
+      ],
+      [
+        "$1600",
+        "The rides at Elitch Gardens are a mile high, since the park's in this \"Mile High City\" in Colorado"
+      ],
+      [
+        "$2000",
+        "Whee!  Test Track, one of Disney World's fastest rides, is in this park with a 5-letter name"
+      ]
+    ]
+  },
+  "9": {
+    "title": "HISTORY & HERSTORY",
+    "clues": [
+      [
+        "$400",
+        "Scholars have referred to the years 1585 to 1592 as \"the Lost Years\" of this English playwright"
+      ],
+      [
+        "$800",
+        "In 1776 she took over the family upholstering business; she also made flags for the Navy of Pennsylvania"
+      ],
+      [
+        "DAILY DOUBLE",
+        "He got 34 patents for the telephone, but don't say Bell; he also got 389 for electric light & power"
+      ],
+      [
+        "$1600",
+        "This Confederate Gen. & Virginian opposed secession but \"could take no part in an invasion of the Southern states\""
+      ],
+      [
+        "$2000",
+        "In 2001 this woman known for aiding Lewis & Clark was made an honorary sergeant in the Regular Army"
+      ]
+    ]
+  },
+  "10": {
+    "title": "TRICKS ARE FOR KIDS",
+    "clues": [
+      [
+        "$400",
+        "(Jimmy of the Clue Crew picks your brain.)  Hold a toothpick near your fingertips--it won't break no matter how hard you try; but move it above your knuckles, & it's easy thanks to this principle that increases mechanical advantage"
+      ],
+      [
+        "$800",
+        "You can use a piece of string to pick up an ice cube if you first sprinkle the ice with this stuff, sodium chloride"
+      ],
+      [
+        "$1200",
+        "(Sarah of the Clue Crew tugs a string in a cup.)  The paper cup seems to laugh because the wet string is transmitting vibrations that form these waves inside the cup"
+      ],
+      [
+        "$1600",
+        "Rub a comb on your arm & you can use it to make the water from a faucet bend toward it thanks to this electricity"
+      ],
+      [
+        "$2000",
+        "(Kelly of the Clue Crew plays a different kind of checkers.)  I can knock the bottom checker out without knocking the stack over thanks to this property of matter that tends to keep things in place"
+      ]
+    ]
+  },
+  "11": {
+    "title": "2 VOWELS, ONE CONSONANT",
+    "clues": [
+      [
+        "$400",
+        "It can follow shepherd's, cherry or mud"
+      ],
+      [
+        "$800",
+        "This word meaning \"also\" also sounds like a number"
+      ],
+      [
+        "$1200",
+        "Don't feed the creatures at a menagerie, a type of this"
+      ],
+      [
+        "$1600",
+        "A charge for services"
+      ],
+      [
+        "$2000",
+        "This guy seen here is the second largest bird on the planet"
+      ]
+    ]
+  }
+}
