@@ -18,6 +18,7 @@ def make_file
   creator = ImageCreator.new
   kit = IMGKit.new(creator.generate_html, quality: 50, width: 800, height: 600)
   kit.stylesheets << "css/styles.css"
+  p kit
   file = kit.to_file("tmp/file#{rand(1..100)}.jpg")
   file
 end
