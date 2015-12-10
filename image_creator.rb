@@ -36,7 +36,6 @@ class ImageCreator
 
   def generate_html
     puts "making html"
-    get_sentence
     set_html
     puts @sentence
     @html

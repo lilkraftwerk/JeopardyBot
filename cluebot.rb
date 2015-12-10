@@ -26,6 +26,7 @@ class JeopardyMarkov
       puts "making another sentence..."
       sentence = @markov.generate_n_sentences(1)
       length = sentence.length 
+      puts length
     end
     puts "done making sentence"
     sentence[-1] = "" if sentence[-1] = "."
