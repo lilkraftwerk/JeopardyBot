@@ -23,7 +23,7 @@ def make_file
 end
 
 def tweet
-  put "tweeting"
+  puts "tweeting"
   file = make_file
   twit = CustomTwitter.new
   twit.update(get_catchphrase, file)
