@@ -30,9 +30,6 @@ class ImageCreator
   def get_sentence
     markov = JeopardyMarkov.new
     @sentence = markov.get_sentence
-
-    # placeholder while I mess with CSS
-    # @sentence = "YOU CAN SAY NO TO THIS, BUT ACADEMY-AWARD WINNING RAPPER JUICY J CAN'T"
   end
 
   def generate_html

@@ -28,7 +28,8 @@ class JeopardyMarkov
       length = sentence.length 
       puts length
     end
-    puts "done making sentence"
+    puts "sentence is:"
+    puts sentence
     sentence[-1] = "" if sentence[-1] = "."
     sentence.upcase
   end
