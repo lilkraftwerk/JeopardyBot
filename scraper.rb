@@ -73,7 +73,7 @@ class JeopardyScraper
 end
 
 def make_all_games
-  range = 1..4500
+  range = 3576..4500
   range = range.to_a
   range.each do |game_number|
     puts "on number #{game_number}"
