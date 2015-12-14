@@ -1,6 +1,6 @@
 html {
-  height: 800px;
-  width: 800px;
+  height: 600px;
+  width: 600px;
   background-color: rgb(1, 16, 138);
 }
 
@@ -21,7 +21,7 @@ html {
 }
 
 .textbox {
-  width: 800px;
+  width: 600px;
   position: absolute;
   left: 50%;
   top: 50%;

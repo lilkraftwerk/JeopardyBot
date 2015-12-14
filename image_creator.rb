@@ -2,9 +2,6 @@ require 'imgkit'
 require 'json'
 require 'pathname'
 
-require_relative 'cluebot'
-require_relative 'custom_twitter'
-
 font_dir = File.join(Dir.home, ".fonts")
 
 class ImageCreator
