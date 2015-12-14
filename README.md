@@ -1,0 +1,5 @@
+# JeopardyBot
+
+Twitter bot. Not affiliated with Jeopardy or the honorable Alex Trebek.
+
+Started by scraping thousands of Jeopardy clues from a fan-run site, then formatting them and posting them to Twitter once every couple of hours. Uses wkhtmltoimage to get the clues looking like they're actually on Jeopardy.
